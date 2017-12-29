@@ -42,8 +42,6 @@ body {
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   top: 3rem;
-  width: 54px;
-  height: 200px;
 }
 .wrapper .txt-right {
   right: 0;
@@ -58,8 +56,6 @@ body {
   right: 0;
   top: -3rem;
   text-align: center;
-  width: 303px;
-  height: 52px;
 }
 .pic-01 {
   animation-duration: 1s;
