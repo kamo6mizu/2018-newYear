@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Microsoft JhengHei, Arial, Helvetica, sans-serif;
+  background: #ff3019;
+  /* Old browsers */
+  background: -moz-radial-gradient(top, ellipse cover, #ff3019 0%, #b70303 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(top, ellipse cover, #ff3019 0%, #b70303 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: url(../images/bg-02.png), radial-gradient(ellipse at top, #ff3019 0%, #b70303 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#b70303', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.wrapper {
+  position: relative;
+  height: calc(100vh - 8rem);
+  width: 25rem;
+  margin: 4rem auto;
+}
+.wrapper div {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: none;
+}
+.wrapper .pic-01 {
+  height: 342px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.wrapper .pic-01 img {
+  width: 280px;
+}
+.wrapper .text-block {
+  color: #f9dc92;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  top: 3rem;
+  width: 54px;
+  height: 200px;
+}
+.wrapper .txt-right {
+  right: 0;
+}
+.wrapper .txt-left {
+  left: 0;
+}
+.wrapper .top-text-block {
+  color: #f9dc92;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -3rem;
+  text-align: center;
+  width: 303px;
+  height: 52px;
+}
+.pic-01 {
+  animation-duration: 1s;
+  animation-name: pic-01;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@-webkit-keyframes pic-01 {
+  from {
+    top: 2.5rem;
+  }
+  to {
+    top: 3rem;
+  }
+}
+@-moz-keyframes pic-01 {
+  from {
+    top: 2rem;
+  }
+  to {
+    top: 3rem;
+  }
+}
