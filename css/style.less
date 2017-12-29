@@ -1,8 +1,10 @@
+@charset "UTF-8";
 html {
-  -webkit-text-size-adjust : none;
-  -ms-text-size-adjust     : none;
-  font-size-adjust         : none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  font-size-adjust: none;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -23,20 +25,17 @@ body {
   position: relative;
   height: ~"calc(100vh - 8rem)";
   width: 100%;
-  max-width:25rem;
+  max-width: 25rem;
   min-width: 20rem;
   min-height: 18rem;
   margin: 4rem auto;
-
-  div{
-    position: absolute;
-    // display: block;
+  div {
+    position: absolute; // display: block;
     font-size: 2.5rem;
-    font-weight: bold;
-    // border: 1px solid #f9dc92;
-    display:none;
+    font-weight: bold; // border: 1px solid #f9dc92;
+    display: none;
   }
-  .pic-01{
+  .pic-01 {
     // width: 280px;
     width: 100%;
     max-height: 22rem;
@@ -44,23 +43,23 @@ body {
     right: 0;
     text-align: center;
   }
-  .pic-01 img{
+  .pic-01 img {
     width: 100%;
     max-width: 280px;
   }
-  .text-block{
+  .text-block {
     color: #f9dc92;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
     top: 3rem;
   }
-  .txt-right{
+  .txt-right {
     right: 0;
   }
-  .txt-left{
+  .txt-left {
     left: 0;
   }
-  .top-text-block{
+  .top-text-block {
     color: #f9dc92;
     margin: 0 auto;
     left: 0;
@@ -72,17 +71,17 @@ body {
 
 // animation
 // 財神
-.pic-01{
+.pic-01 {
   animation-duration: 1s;
   animation-name: pic-01;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 @-webkit-keyframes pic-01 {
   from {
     top: 2.5rem;
   }
-
   to {
     top: 3rem;
   }
@@ -92,11 +91,11 @@ body {
   from {
     top: 2rem;
   }
-
   to {
     top: 3rem;
   }
 }
+
 // // 好運旺旺來
 // .txt-right{
 //   animation-duration: 3s;
@@ -109,7 +108,6 @@ body {
 //     top: -21.25rem;
 //     opacity: 0;
 //   }
-
 //   to {
 //     top: 3rem;
 //     opacity: 1;
@@ -126,21 +124,22 @@ body {
 //     top: -21.25rem;
 //     opacity: 0;
 //   }
-
 //   to {
 //     top: 3rem;
 //     opacity: 1;
 //   }
 // }
-
 // RWD
-@media (max-width: 480px) { 
-  @viewport {  
-    orientation: portrait;  
-  }  
-//   .wrapper {  
-//     div{
-//       font-size: 1.5em;
-//     }
-//  }
+@media (max-width: 480px) {
+  @viewport {
+    orientation: portrait; // 直式
+  }
+}
+
+// 橫式
+@media (max-width: 480px) and (orientation : landscape) {
+  .wrapper {
+    height: 100vh;
+    min-height: 18rem;
+  }
 }

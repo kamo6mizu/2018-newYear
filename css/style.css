@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
@@ -89,5 +90,11 @@ body {
 @media (max-width: 480px) {
   @viewport {
     orientation: portrait;
+  }
+}
+@media (max-width: 480px) and (orientation: landscape) {
+  .wrapper {
+    height: 100vh;
+    min-height: 18rem;
   }
 }
