@@ -80,3 +80,8 @@ body {
     top: 3rem;
   }
 }
+@media (max-width: 480px) {
+  @viewport {
+    orientation: landscape;
+  }
+}
