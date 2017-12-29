@@ -57,7 +57,7 @@ $(document).ready(function () {
     spawnInterval: 1000,
 
     // jQuery element to apply snow effect on (should work on any block element) (default: body)
-    target: jQuery("body"),
+    target: jQuery(".snow"),
 
     //elements to use in generating snow effect
     elements: [
