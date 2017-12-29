@@ -24,6 +24,7 @@ body {
   width: 100%;
   max-width: 25rem;
   min-width: 20rem;
+  min-height: 18rem;
   margin: 4rem auto;
 }
 .wrapper div {
@@ -34,7 +35,7 @@ body {
 }
 .wrapper .pic-01 {
   width: 100%;
-  max-height: 342px;
+  max-height: 22rem;
   left: 0;
   right: 0;
   text-align: center;
