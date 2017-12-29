@@ -2,8 +2,8 @@ $(document).ready(function () {
   $(".pic-01").show('slide', {
     direction: 'up' // down up
   }, 0, function () {
-    $(".txt-right").fadeIn(2000, function () {
-      $(".txt-left").fadeIn(2000, function () {
+    $(".txt-right").fadeIn(500, function () {
+      $(".txt-left").fadeIn(500, function () {
         $(".pic-01").animate(1000, "easeOutBounce", function () {
           setInterval(GoSlant, 1000);
           $(".top-text-block").fadeIn(2000, function () {});
