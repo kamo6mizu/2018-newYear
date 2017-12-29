@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="orientation=portrait, width=device-width, initial-scale=1.0"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2018-newYYY</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="snow">
+  </div>
+</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- <script src="js/jquery-ui.min.js"></script>
+<script src="js/animation.js"></script> -->
+<script src="js/jquery.snow.js"></script>
+<script>
+  var snowEffectInterval = jQuery.fn.snow({
+    // min size of element (default: 20)
+    minSize: 10,
+
+    // max size of element (default: 50)
+    maxSize: 30,
+
+    // flake fall time multiplier (default: 20)
+    fallTimeMultiplier: 20,
+
+    // flake fall time difference (default: 10000)
+    fallTimeDifference: 10000,
+
+    // interval (miliseconds) between new element spawns (default: 500)
+    spawnInterval: 1000,
+
+    // jQuery element to apply snow effect on (should work on any block element) (default: body)
+    target: jQuery(".snow"),
+
+    //elements to use in generating snow effect
+    elements: [
+
+      // Element #1
+      {
+        // html element to be spawned for this element
+        html: '<img src="images/pic-02.png">'
+      },
+
+      // Element #2
+      {
+        // html element to be spawned for this element
+        html: '<img src="images/pic-03.png">'
+      }
+    ]
+  });
+</script>
+  
