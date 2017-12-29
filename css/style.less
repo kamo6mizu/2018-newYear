@@ -1,10 +1,11 @@
 @charset "UTF-8";
 html {
   -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
-  font-size-adjust: none;
+  text-size-adjust: none;
 }
-html,body{ height:100vh;}
+html,body{ min-height:100vh;}
 body {
   margin: 0;
   padding: 0;
@@ -165,12 +166,13 @@ body {
     height: 150vh;
   }
 }
-@media (orientation : landscape) {
-  body {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-}
+// 當為橫式的螢幕; 畫面固定為直式, 不可以轉成橫式
+// @media (orientation : landscape) {
+//   body {
+//     -webkit-transform: rotate(-90deg);
+//     -moz-transform: rotate(-90deg);
+//     -o-transform: rotate(-90deg);
+//     -ms-transform: rotate(-90deg);
+//     transform: rotate(-90deg);
+//   }
+// }
