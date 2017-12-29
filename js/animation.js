@@ -72,8 +72,7 @@ $(document).ready(function () {
       {
         // html element to be spawned for this element
         html: '<img src="images/pic-03.png">'
-      },
-
+      }
     ]
   });
 });
